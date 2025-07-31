@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Picker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="twinkle1">
+
+    <h1>Color Picker</h1>
+    <h2>Pick a color from any website</h2>
+
+    <button id="pickColorBtn">Pick Color</button>
+     <div id="colorDisplay"></div>
+
+     <h3>Color History</h3>
+     <div id="colorHistory"></div>
+
+     <button id="clearHistoryBtn">Clear History</button>
+
+     <!--  Add Hex & RGB Format Toggle -->
+       <!-- Let users view colors in both formats.Add a toggle checkbox -->
+     <label>
+        <input type="checkbox" id="toggleFormat" /> Show RGB
+      </label>
+
+      
+      <!-- Add a Tooltip or Toast Notification (Optional UX) Instead of alert(), use a better UI message: -->
+      <div id="toast" class="toast">Copied!</div>
+
+      
+    </div>
+
+
+  <script src="popup.js"></script>
+
+
+
+</body>
+</html>

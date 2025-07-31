@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Smart Color Picker",
+    "description": "Pick colors from any webpage and copy them with one click. Keeps history and RGB toggle.",
+    "version": "1.0",
+    "permissions": [
+      "scripting",
+      "activeTab",
+      "storage",
+      "clipboardWrite"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/twinkleNew-modified.png",
+        "48": "images/colorICON.png",
+        "128": "images/colorICON.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": ["<all_urls>"]
+  }
+  
